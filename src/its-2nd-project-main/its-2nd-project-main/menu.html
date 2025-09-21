@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | D'Kitchen Corner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <!-- This is a basic website that uses the latest version bootstrap 5.3 -->
+    <!-- A basic navbar -->
+    <header class="mb-4 border-bottom shadow-sm">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid px-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto py-2">
+
+                        <a class="navbar-brand app-nav-brand" href="index.html">🍳 D'Kitchen Corner </a>
+                        <!-- <li class="nav-item app-nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                        <li class="nav-item app-nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle app-nav-item active" href="menu.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item app-nav-item" href="menu.html">Main Menu</a></li>
+                                <li><a class="dropdown-item app-nav-item" href="menu.html#lunch">Lunch</a></li>
+                                <li><a class="dropdown-item app-nav-item" href="menu.html#dinner">Dinner</a></li>
+                                <li><a class="dropdown-item app-nav-item" href="menu.html#drinks">Drinks</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item app-nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item app-nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle app-nav-item bg-success text-white rounded-4 mx-2" href="menu.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Order Now
+                            </a>
+                            <ul class="dropdown-menu bg-success text-white">
+                                <li><a class="dropdown-item app-nav-item bg-success text-white" href="https://food.grab.com/ph/en/">GrabFood</a></li>
+                                <li><a class="dropdown-item app-nav-item bg-success text-white" href="https://www.foodpanda.ph/">Foodpanda</a></li>
+                                <li><a class="dropdown-item app-nav-item bg-success text-white" href="https://www.facebook.com/people/D-Kitchen-Corner/100054600572655/">Messenger</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- basic carousel code  -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel/1.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;"
+                    alt="...">
+                <div class="carousel-caption d-none d-lg-block">
+                    <h1 class>Sizzle Your Taste Buds with Our Lunch Specials</h1>
+                    <h5>From classic dishes to children's favorites, our lunch menu offers a wide variety of options to
+                        satisfy your cravings. Try our signature Silog dishes for a delicious and satisfying meal.</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/2.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Indulge in Our Savory Dinner Selections</h1>
+                    <h5>Whether you're in the mood for seafood, meat, or vegetarian options, our dinner menu has
+                        something for everyone. Our chefs put extra care and attention in every dish to ensure that
+                        every bite is packed with flavor.</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel/3.jpg" class="d-block w-100" style="max-height: 400px; object-fit: cover;"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Refresh Your Palette with Our Drinks</h1>
+                    <h5>From traditional Filipino beverages to modern twists on classic drinks, our drink menu offers a
+                        variety of options to quench your thirst. Try our refreshing halo-halo, or our homemade ice teas
+                        and lemonades for a taste of summer.</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Header for the menu page -->
+    <div class="container-fluid bg-success py-5 mb-3 shadow-lg">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center text-light">Our Menu 🍽️</h1>
+                <p class="text-center text-light"> Take a look at our menu and see what we have to offer. We have a wide
+                    variety of dishes and drinks
+                    that will surely satisfy your cravings. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="lunch" class="container-fluid py-3 pt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Lunch</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu page  -->
+
+    <div class="container">
+        <div class="container-fluid my-2" style="max-width: 1000px;">
+            <div class="row">
+
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/adobo.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Adobo</h5>
+                            <p class="card-text">A popular dish made with meat or seafood, soy sauce, and vinegar.</p>
+                            <a href="#" class="btn btn-primary">₱ 65.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/sinigang.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Sinigang</h5>
+                            <p class="card-text">A sour soup made with tamarind and various vegetables and meat.</p>
+                            <a href="#" class="btn btn-primary">₱ 85.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/kare-kare.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Kare-kare</h5>
+                            <p class="card-text">A stew made with oxtail and vegetables in a peanut sauce.</p>
+                            <a href="#" class="btn btn-primary">₱ 95.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/pancit.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Pancit</h5>
+                            <p class="card-text">A stir-fry noodle dish with vegetables and meat. A nice alternative to
+                                rice.</p>
+                            <a href="#" class="btn btn-primary">₱ 75.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/lumpia.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Lumpia</h5>
+                            <p class="card-text">A type of spring roll filled with meat and vegetables. Your childhood
+                                favorite!</p>
+                            <a href="#" class="btn btn-primary">₱ 55.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/bistek.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Bistek</h5>
+                            <p class="card-text">A dish made with thinly sliced beef, onions, and soy sauce.</p>
+                            <a href="#" class="btn btn-primary">₱ 85.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/lechon.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Lechon </h5>
+                            <p class="card-text">A whole roasted pig, stuffed with herbs and spices.</p>
+                            <a href="#" class="btn btn-primary">Avail for more info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card">
+                        <img src="img/menu/tapsilog.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Tapsilog</h5>
+                            <p class="card-text">A popular breakfast dish made with fried rice, egg, and meat.</p>
+                            <a href="#" class="btn btn-primary">₱ 65.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="dinner" class="container-fluid py-3 pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Dinner</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-2" style="max-width: 1000px;">
+            <div class="row">
+
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/sisig.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Sisig</h5>
+                            <p class="card-text">A dish made with chopped pig's face, ears, and cheeks.</p>
+                            <a href="#" class="btn btn-primary">₱ 75.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/crispy-pata.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Crispy Pata</h5>
+                            <p class="card-text">A deep-fried pork dish.</p>
+                            <a href="#" class="btn btn-primary">₱ 120.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/caldereta.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Caldereta</h5>
+                            <p class="card-text">A stew made with beef, pork or goat meat and vegetables.</p>
+                            <a href="#" class="btn btn-primary">₱ 85.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/dinuguan.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinuguan</h5>
+                            <p class="card-text">A stew made with pork blood, meat and vegetables.</p>
+                            <a href="#" class="btn btn-primary">₱ 80.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/kare-kare.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Kare-kare</h5>
+                            <p class="card-text">A stew made with oxtail and vegetables in a peanut sauce.</p>
+                            <a href="#" class="btn btn-primary">₱ 100.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/bicol-express.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Bicol Express</h5>
+                            <p class="card-text">A dish made with pork and vegetables in a spicy coconut milk sauce.</p>
+                            <a href="#" class="btn btn-primary">₱ 90.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="drinks" class="container-fluid py-3 pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Drinks</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-2" style="max-width: 1000px;">
+            <div class="row">
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/halo-halo.jpg" style="aspect-ratio: 1/1; object-fit: cover;" class="card-img-top"
+                            alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Halo-halo</h5>
+                            <p class="card-text">A popular dessert drink made with shaved ice, milk and various sweetened
+                                beans and fruits.</p>
+                            <a href="#" class="btn btn-primary">₱ 50.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/sago-gulaman.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Sago at Gulaman</h5>
+                            <p class="card-text">A sweet, jelly-like dessert made with sago pearls and gulaman (agar-agar).
+                            </p>
+                            <a href="#" class="btn btn-primary">₱ 25.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/sago-gulaman-milk.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Sago at Gulaman with milk</h5>
+                            <p class="card-text">A sweet, jelly-like dessert made with sago pearls, gulaman (agar-agar) and
+                                milk.</p>
+                            <a href="#" class="btn btn-primary">₱ 30.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/buko-juice.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Buko Juice</h5>
+                            <p class="card-text">A drink made with young coconut water and flesh.</p>
+                            <a href="#" class="btn btn-primary">₱ 30.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/calamansi-juice.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Calamansi Juice</h5>
+                            <p class="card-text">A drink made with calamansi juice and sugar.</p>
+                            <a href="#" class="btn btn-primary">₱ 25.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card">
+                        <img src="img/menu/mangga-sago.jpg" style="aspect-ratio: 1/1; object-fit: cover;"
+                            class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangga't Sago</h5>
+                            <p class="card-text">A sweet dessert made with mango and sago pearls.</p>
+                            <a href="#" class="btn btn-primary">₱ 50.00 per serving</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- A basic footer -->
+    <div class="container-fluid shadow-lg text-light">
+        <footer class="pt-3 pb-2 mt-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2 text-muted" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="menu.html">Main Menu</a></li>
+                        <li><a class="dropdown-item" href="menu.html#lunch">Lunch</a></li>
+                        <li><a class="dropdown-item" href="menu.html#drinks">Drinks</a></li>
+                        <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="events.html" class="nav-link px-2 text-muted">Events</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2 text-muted" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Order Now
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://food.grab.com/ph/en/">GrabFood</a></li>
+                        <li><a class="dropdown-item" href="https://www.foodpanda.ph/">Foodpanda</a></li>
+                        <li><a class="dropdown-item" href="https://www.facebook.com/people/D-Kitchen-Corner/100054600572655/">Messenger</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2022 D'Kitchen Corner Restaurant. All rights reserved.</p>
+            <p class="text-center text-muted">Crafted by Psalmwel Kyle M. Conciso (ITS121L/FOPI01)</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
